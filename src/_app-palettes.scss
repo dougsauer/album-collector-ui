@@ -1,0 +1,163 @@
+/*  Copyright 2020 by Douglas Sauer | Blue Heart Software. */
+
+$bh-constantin-p: (
+  50 : #e2e6f5,
+  100 : #b7c0e5,
+  200 : #8796d4,
+  300 : #566bc3,
+  400 : #324cb6,
+  500 : #0e2ca9,
+  600 : #0c27a2,
+  700 : #0a2198,
+  800 : #081b8f,
+  900 : #04107e,
+  A100 : #acb1ff,
+  A200 : #7981ff,
+  A400 : #4651ff,
+  A700 : #2c39ff,
+  contrast: (
+    50 : #000000,
+    100 : #000000,
+    200 : #000000,
+    300 : #ffffff,
+    400 : #ffffff,
+    500 : #ffffff,
+    600 : #ffffff,
+    700 : #ffffff,
+    800 : #ffffff,
+    900 : #ffffff,
+    A100 : #000000,
+    A200 : #000000,
+    A400 : #ffffff,
+    A700 : #ffffff,
+  )
+);
+
+$bh-traditional-p: (
+  50 : #c6d0fa,
+  100 : #7f96f4,
+  200 : #4b6bf0,
+  300 : #133be1,
+  400 : #1033c5,
+  500 : #0e2ca9,
+  600 : #0c258d,
+  700 : #091d70,
+  800 : #071654,
+  900 : #050f38,
+  A100 : #b7c5ff,
+  A200 : #5173ff,
+  A400 : #002eea,
+  A700 : #0b2fc6,
+  contrast: (
+    50 : #000000,
+    100 : #000000,
+    200 : #ffffff,
+    300 : #ffffff,
+    400 : #ffffff,
+    500 : #ffffff,
+    600 : #ffffff,
+    700 : #ffffff,
+    800 : #ffffff,
+    900 : #ffffff,
+    A100 : #000000,
+    A200 : #ffffff,
+    A400 : #ffffff,
+    A700 : #ffffff,
+  )
+);
+
+
+$bh-constantin-a: (
+  50 : #f7f7f7,
+  100 : #ebebeb,
+  200 : #dedede,
+  300 : #d1d1d1,
+  400 : #c7c7c7,
+  500 : #bdbdbd,
+  600 : #b7b7b7,
+  700 : #aeaeae,
+  800 : #a6a6a6,
+  900 : #989898,
+  A100 : #ffffff,
+  A200 : #ffffff,
+  A400 : #ffd4d4,
+  A700 : #ffbbbb,
+  contrast: (
+    50 : #000000,
+    100 : #000000,
+    200 : #000000,
+    300 : #000000,
+    400 : #000000,
+    500 : #000000,
+    600 : #000000,
+    700 : #000000,
+    800 : #000000,
+    900 : #000000,
+    A100 : #000000,
+    A200 : #000000,
+    A400 : #000000,
+    A700 : #000000,
+  )
+);
+
+$bh-traditional-a: (
+  50 : #ffffff,
+  100 : #ffffff,
+  200 : #ffffff,
+  300 : #dcdcdc,
+  400 : #cccccc,
+  500 : #bdbdbd,
+  600 : #aeaeae,
+  700 : #9e9e9e,
+  800 : #8f8f8f,
+  900 : #808080,
+  A100 : #ffffff,
+  A200 : #ffffff,
+  A400 : #ddd0d0,
+  A700 : #ccc7c7,
+  contrast: (
+    50 : #000000,
+    100 : #000000,
+    200 : #000000,
+    300 : #000000,
+    400 : #000000,
+    500 : #000000,
+    600 : #000000,
+    700 : #000000,
+    800 : #000000,
+    900 : #000000,
+    A100 : #000000,
+    A200 : #000000,
+    A400 : #000000,
+    A700 : #000000,
+  )
+);
+
+$bh-material-io-p: (
+  100 : #595bdc,
+  500 : #0e2ca9,
+  700 : #000879,
+  contrast: (
+    100 : #000000,
+    500 : #ffffff,
+    700 : #ffffff
+  )
+);
+
+$bh-material-io-a: (
+  100 : #efefef,
+  500 : #bdbdbd,
+  700 : #8d8d8d,
+  contrast: (
+    100 : #000000,
+    500 : #000000,
+    700 : #000000
+  )
+);
+
+$pal-bh-traditional-primary: mat-palette($bh-traditional-p);
+$pal-bh-traditional-accent: mat-palette($bh-traditional-a);
+$pal-bh-constantin-primary: mat-palette($bh-constantin-p);
+$pal-bh-constantin-accent: mat-palette($bh-constantin-a);
+$pal-bh-primary: mat-palette($bh-material-io-p);
+$pal-bh-accent: mat-palette($bh-material-io-a);
