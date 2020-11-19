@@ -1,3 +1,4 @@
+/*  Copyright 2020 by Douglas Sauer | Blue Heart Software. */
 import { Component } from '@angular/core';
 
 @Component({
