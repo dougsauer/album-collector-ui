@@ -1,18 +1,15 @@
 /*  Copyright 2020 by Douglas Sauer | Blue Heart Software. */
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
 
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { LayoutModule } from '@angular/cdk/layout';
-import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatButtonModule } from '@angular/material/button';
-import { MatSidenavModule } from '@angular/material/sidenav';
-import { MatIconModule } from '@angular/material/icon';
-import { MatListModule } from '@angular/material/list';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {LayoutModule} from '@angular/cdk/layout';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { MainNavComponent } from './main-nav/main-nav.component';
+import {AppComponent} from './app.component';
+import {AppRoutingModule} from './app-routing.module';
+import {AngularMaterialModule} from './angular-material.module';
+import {MainNavComponent} from './main-nav/main-nav.component';
+import {AlbumsModule} from './albums/albums.module';
 
 @NgModule({
   declarations: [
@@ -21,16 +18,14 @@ import { MainNavComponent } from './main-nav/main-nav.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
     BrowserAnimationsModule,
     LayoutModule,
-    MatToolbarModule,
-    MatButtonModule,
-    MatSidenavModule,
-    MatIconModule,
-    MatListModule
+    AlbumsModule,
+    AppRoutingModule,
+    AngularMaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
