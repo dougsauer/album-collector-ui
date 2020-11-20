@@ -16,7 +16,12 @@ export class MainNavComponent {
       map(result => result.matches),
       shareReplay()
     );
+  userIsAuthenticated = false;
 
-  constructor(private breakpointObserver: BreakpointObserver) {}
+  constructor(private breakpointObserver: BreakpointObserver) {
+  }
 
+  onLogout(): void {
+    console.log('onLogout()');
+  }
 }

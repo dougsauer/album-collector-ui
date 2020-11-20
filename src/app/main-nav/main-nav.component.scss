@@ -18,3 +18,23 @@
   top: 0;
   z-index: 1;
 }
+
+.mat-toolbar {
+  justify-content: flex-end;
+}
+
+.app-name {
+  flex: 1;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}

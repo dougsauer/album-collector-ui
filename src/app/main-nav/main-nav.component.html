@@ -21,7 +21,19 @@
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span>Blue Heart Album Collector</span>
+      <span class="app-name">Blue Heart Album Collector</span>
+      <ul>
+        <li *ngIf="!userIsAuthenticated">
+          <a mat-button
+             [routerLink]="['/signup']"
+             routerLinkActive="mat-accent" >Placeholder</a>
+        </li>
+        <li *ngIf="userIsAuthenticated">
+          <button type="button" aria-label="User settings menu" mat-icon-button (click)="onLogout()">
+            <mat-icon aria-label="User settings icon"></mat-icon>
+          </button>
+        </li>
+      </ul>
     </mat-toolbar>
     <ng-content></ng-content>
   </mat-sidenav-content>
