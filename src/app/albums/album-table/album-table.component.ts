@@ -22,7 +22,7 @@ export class AlbumTableComponent implements AfterViewInit, OnInit, OnDestroy {
   totalCount = 0;
 
   /** Columns displayed in the table. Columns IDs can be added, removed, or reordered. */
-  displayedColumns = ['_id', 'title'];
+  displayedColumns = ['artist', 'title', 'label', 'originalReleaseYear', 'purchaseDate', 'purchasePrice'];
 
   private totalCountSub!: Subscription;
 
