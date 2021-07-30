@@ -33,9 +33,12 @@ export interface Song {
 export interface Album {
   _id: string;
   title: string;
-  artist: string;
+  artistId: number;
+  artistName: string;
+  artistSort: string;
   label: string;
   genre: string;
+  genreId: number;
   style: string;
   originalReleaseYear: number;
   numberOfDiscs: number;
